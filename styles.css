@@ -1,0 +1,122 @@
+body {
+    background-color: #d3e0e5;
+    color: #5a75b8;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: large;
+    /* Just went for another simple and minimalistic design  */
+
+}
+
+
+header {
+    background-color: #efe6d2;
+    padding: 10px 0px 10px 0px;
+    margin: 40px 30px 0px 30px;
+    /* Wanted my header to not be touching the sides but touch the other content */
+
+    font-variant: small-caps;
+    border: solid #4061b3 4px;
+    border-bottom: none;
+
+}
+
+.contain {
+    background-color: #efe6d2;
+
+    padding: 40px;
+    margin: 0px 30px 0px 30px;
+    /* Also wanted my content to not be touching the sides but touch the other content 
+      I decided this after I made my wireframe so that's why it does not look like that for my draft*/
+
+    border: solid #4061b3 4px;
+    border-bottom: none;
+    /* Had to remove the bottom borders so there was no overlap */
+
+}
+
+
+
+table {
+    border-collapse: collapse;
+    /* Wanted the content to be touching */
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+th,
+td {
+    border: 2px solid #4061b3;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* I wanted every other row to be a different color */
+}
+
+
+.form-name {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-name label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-name input,
+.form-name textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4061b3;
+    border-radius: 5px;
+    font-size: 14px;
+    /* wanted a border, plus not be so small */
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #f9f9f9;
+    border: solid #4061b3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "EB Garamond", serif;
+    color: #4061b3;
+}
+
+.form-actions button:hover {
+    background-color: #5a75b8;
+    color: #f9f9f9;
+    /* Wanted my button to look different while hovering */
+}
+
+
+@media screen and (min-width:768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+
+    .grid-item1 {
+        margin-right: 0%;
+    }
+
+    .grid-item2 {
+        margin-left: 0%;
+        border-left: none;
+    }
+
+    /*I wanted to make my top to content to be on top of each other as you minimize the screen. 
+       I also had to change the margin and border so it didnt look weird side by side*/
+}
